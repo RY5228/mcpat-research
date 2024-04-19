@@ -1414,9 +1414,9 @@ bool InputParameter::error_checking()
   }
 
   int C = cache_sz/nbanks;
-  if (C < 64)
+  if (C < 16)
   {
-    cerr << "Cache size must >=64" << endl;
+    cerr << "Cache size must >=16" << endl;
     return false;
   }
 
